@@ -17,6 +17,7 @@ public class SelectQueationGroupViewController: UIViewController {
     
     public let questionGroups = QuestionGroup.allGroups()
     private var selectedQuestionGroup: QuestionGroup!
+    private let appSettings = AppSettings.shared
 
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +50,7 @@ extension SelectQueationGroupViewController: UITableViewDelegate {
     
     public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let viewController = segue.destination as? QuestionViewController else { return }
-        viewController.questionStrategy = SequentialQuestionStrategy(questionGroup: selectedQuestionGroup)
+        viewController.questionStrategy = appSettings.questionStrategy(for: selectedQuestionGroup)
         viewController.delegate = self
     }
 }

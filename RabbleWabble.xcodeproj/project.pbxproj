@@ -12,6 +12,8 @@
 		C17EC1BB26DDCF9400D780C4 /* QuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17EC1BA26DDCF9400D780C4 /* QuestionStrategy.swift */; };
 		C17EC1BD26DDD18F00D780C4 /* SequentialQuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17EC1BC26DDD18F00D780C4 /* SequentialQuestionStrategy.swift */; };
 		C17EC1BF26DDD40000D780C4 /* RandomQuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17EC1BE26DDD40000D780C4 /* RandomQuestionStrategy.swift */; };
+		C17EC1C126DF332000D780C4 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17EC1C026DF332000D780C4 /* AppSettings.swift */; };
+		C17EC1C326DF5F3D00D780C4 /* AppSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17EC1C226DF5F3D00D780C4 /* AppSettingsViewController.swift */; };
 		C1C6E7B126CE0F9400B0190F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C6E7B026CE0F9400B0190F /* AppDelegate.swift */; };
 		C1C6E7B326CE0F9400B0190F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C6E7B226CE0F9400B0190F /* SceneDelegate.swift */; };
 		C1C6E7B526CE0F9400B0190F /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C6E7B426CE0F9400B0190F /* QuestionViewController.swift */; };
@@ -30,6 +32,8 @@
 		C17EC1BA26DDCF9400D780C4 /* QuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionStrategy.swift; sourceTree = "<group>"; };
 		C17EC1BC26DDD18F00D780C4 /* SequentialQuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequentialQuestionStrategy.swift; sourceTree = "<group>"; };
 		C17EC1BE26DDD40000D780C4 /* RandomQuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuestionStrategy.swift; sourceTree = "<group>"; };
+		C17EC1C026DF332000D780C4 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		C17EC1C226DF5F3D00D780C4 /* AppSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsViewController.swift; sourceTree = "<group>"; };
 		C1C6E7AD26CE0F9400B0190F /* RabbleWabble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RabbleWabble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1C6E7B026CE0F9400B0190F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1C6E7B226CE0F9400B0190F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 			children = (
 				C1C6E7B426CE0F9400B0190F /* QuestionViewController.swift */,
 				C17EC1B526D76EFD00D780C4 /* SelectQueationGroupViewController.swift */,
+				C17EC1C226DF5F3D00D780C4 /* AppSettingsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 				C1C6E7CD26CE13CC00B0190F /* QuestionGroupData.swift */,
 				C1C6E7C926CE126B00B0190F /* Question.swift */,
 				C1C6E7CB26CE131900B0190F /* QuestionGroup.swift */,
+				C17EC1C026DF332000D780C4 /* AppSettings.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -212,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C17EC1C126DF332000D780C4 /* AppSettings.swift in Sources */,
 				C1C6E7B526CE0F9400B0190F /* QuestionViewController.swift in Sources */,
 				C1C6E7CA26CE126B00B0190F /* Question.swift in Sources */,
 				C1C6E7B126CE0F9400B0190F /* AppDelegate.swift in Sources */,
@@ -222,6 +229,7 @@
 				C17EC1BF26DDD40000D780C4 /* RandomQuestionStrategy.swift in Sources */,
 				C17EC1BB26DDCF9400D780C4 /* QuestionStrategy.swift in Sources */,
 				C17EC1B826D770B600D780C4 /* QuestionGroupCell.swift in Sources */,
+				C17EC1C326DF5F3D00D780C4 /* AppSettingsViewController.swift in Sources */,
 				C1C6E7CC26CE131900B0190F /* QuestionGroup.swift in Sources */,
 				C1C6E7B326CE0F9400B0190F /* SceneDelegate.swift in Sources */,
 			);
