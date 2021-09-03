@@ -15,12 +15,25 @@ public class SelectQueationGroupViewController: UIViewController {
         }
     }
     
-    public let questionGroups = QuestionGroup.allGroups()
-    private var selectedQuestionGroup: QuestionGroup!
+    private let questionGroupCaretaker = QuestionGroupCaretaker()
+    private var questionGroups: [QuestionGroup] {
+        return questionGroupCaretaker.questionGroups
+    }
+    private var selectedQuestionGroup: QuestionGroup! {
+        get {
+            return questionGroupCaretaker.selectedQuestionGroup
+        }
+        set {
+            questionGroupCaretaker.selectedQuestionGroup = newValue
+        }
+    }
     private let appSettings = AppSettings.shared
 
     public override func viewDidLoad() {
         super.viewDidLoad()
+        questionGroups.forEach { group in
+            print("\(group.title): " + "correctCount \(group.score.correctCount), " + "incorrectCount \(group.score.incorrectCount)")
+        }
     }
 }
 
@@ -50,7 +63,7 @@ extension SelectQueationGroupViewController: UITableViewDelegate {
     
     public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let viewController = segue.destination as? QuestionViewController else { return }
-        viewController.questionStrategy = appSettings.questionStrategy(for: selectedQuestionGroup)
+        viewController.questionStrategy = appSettings.questionStrategy(for: questionGroupCaretaker)
         viewController.delegate = self
     }
 }
