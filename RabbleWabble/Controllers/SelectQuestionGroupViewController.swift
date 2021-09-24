@@ -1,5 +1,5 @@
 //
-//  SelectQueationGroupViewController.swift
+//  SelectQuestionGroupViewController.swift
 //  RabbleWabble
 //
 //  Created by gaoyongxiao on 2021/8/26.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class SelectQueationGroupViewController: UIViewController {
+public class SelectQuestionGroupViewController: UIViewController {
     
     @IBOutlet internal var tableView: UITableView! {
         didSet {
@@ -38,7 +38,7 @@ public class SelectQueationGroupViewController: UIViewController {
 }
 
 
-extension SelectQueationGroupViewController: UITableViewDataSource {
+extension SelectQuestionGroupViewController: UITableViewDataSource {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return questionGroups.count
     }
@@ -47,11 +47,14 @@ extension SelectQueationGroupViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "QuestionGroupCell", for: indexPath) as! QuestionGroupCell
         let questionGroup = questionGroups[indexPath.row]
         cell.titleLabel.text = questionGroup.title
+        cell.percentageSubscriber = questionGroup.score.$runningPercentage.receive(on: DispatchQueue.main).map({ output in
+            return String(format: "%.0f %%", round(100 * output))
+        }).assign(to: \.text, on: cell.percentageLabel)
         return cell
     }
 }
 
-extension SelectQueationGroupViewController: UITableViewDelegate {
+extension SelectQuestionGroupViewController: UITableViewDelegate {
     public func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
         selectedQuestionGroup = questionGroups[indexPath.row]
         return indexPath
@@ -68,7 +71,7 @@ extension SelectQueationGroupViewController: UITableViewDelegate {
     }
 }
 
-extension SelectQueationGroupViewController: QuestionViewControllerDelegate {
+extension SelectQuestionGroupViewController: QuestionViewControllerDelegate {
     public func questionViewController(_ viewController: QuestionViewController, didCancel questionStrategy: QuestionStrategy) {
         navigationController?.popToViewController(self, animated: true)
     }

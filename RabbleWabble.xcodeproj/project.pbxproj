@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C17EC1B626D76EFD00D780C4 /* SelectQueationGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17EC1B526D76EFD00D780C4 /* SelectQueationGroupViewController.swift */; };
+		C17EC1B626D76EFD00D780C4 /* SelectQuestionGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17EC1B526D76EFD00D780C4 /* SelectQuestionGroupViewController.swift */; };
 		C17EC1B826D770B600D780C4 /* QuestionGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17EC1B726D770B600D780C4 /* QuestionGroupCell.swift */; };
 		C17EC1BB26DDCF9400D780C4 /* QuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17EC1BA26DDCF9400D780C4 /* QuestionStrategy.swift */; };
 		C17EC1BD26DDD18F00D780C4 /* SequentialQuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17EC1BC26DDD18F00D780C4 /* SequentialQuestionStrategy.swift */; };
@@ -30,7 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C17EC1B526D76EFD00D780C4 /* SelectQueationGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectQueationGroupViewController.swift; sourceTree = "<group>"; };
+		C17EC1B526D76EFD00D780C4 /* SelectQuestionGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectQuestionGroupViewController.swift; sourceTree = "<group>"; };
 		C17EC1B726D770B600D780C4 /* QuestionGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroupCell.swift; sourceTree = "<group>"; };
 		C17EC1BA26DDCF9400D780C4 /* QuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionStrategy.swift; sourceTree = "<group>"; };
 		C17EC1BC26DDD18F00D780C4 /* SequentialQuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequentialQuestionStrategy.swift; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				C1C6E7B426CE0F9400B0190F /* QuestionViewController.swift */,
-				C17EC1B526D76EFD00D780C4 /* SelectQueationGroupViewController.swift */,
+				C17EC1B526D76EFD00D780C4 /* SelectQuestionGroupViewController.swift */,
 				C17EC1C226DF5F3D00D780C4 /* AppSettingsViewController.swift */,
 			);
 			path = Controllers;
@@ -241,7 +241,7 @@
 				C1C6E7CA26CE126B00B0190F /* Question.swift in Sources */,
 				C1C6E7B126CE0F9400B0190F /* AppDelegate.swift in Sources */,
 				C1C6E7D426CE2C9E00B0190F /* QuestionView.swift in Sources */,
-				C17EC1B626D76EFD00D780C4 /* SelectQueationGroupViewController.swift in Sources */,
+				C17EC1B626D76EFD00D780C4 /* SelectQuestionGroupViewController.swift in Sources */,
 				C17EC1BD26DDD18F00D780C4 /* SequentialQuestionStrategy.swift in Sources */,
 				C17EC1BF26DDD40000D780C4 /* RandomQuestionStrategy.swift in Sources */,
 				C17EC1BB26DDCF9400D780C4 /* QuestionStrategy.swift in Sources */,
